@@ -1,0 +1,202 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Helvetica', sans-serif;
+    background-color: #f8f8f8;
+    color: #444;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    font-size: 2.2em;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f4a261;
+}
+
+/* Menú desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content li {
+    width: 150px;
+}
+
+.dropdown-content li a {
+    padding: 10px;
+    display: block;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content li a:hover {
+    background-color: #f4a261;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Sección de presentación */
+#presentacion {
+    background-color: #f4a261;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#presentacion h2 {
+    font-size: 3.2em;
+    margin: 0 0 10px;
+}
+
+#presentacion h3 {
+    font-size: 2em;
+    font-weight: 300;
+}
+.press {
+
+    padding: 20px; 
+    border-radius: 10px; 
+    margin: 20px 0; 
+
+}
+
+.parrafo_inicio {
+    text-align: justify;
+    justify-content: center;
+    font-family: Arial, sans-serif; 
+    line-height: 1.6; 
+    font-size: 1.2em;
+    color: #333; 
+    margin: 15px 0; 
+    padding-left: 10em;
+    padding-right:10em ;
+}
+
+.parrafo_inicio b {
+    color: #D81515; /* Color del texto en negrita */
+}
+
+
+.semana {
+    background-color: white;
+    margin: 40px 0;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+}
+
+.semana:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.tit_sem {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contenido-semana {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.datos {
+    font-size: 1.5em; /* Tamaño de fuente grande para mayor visibilidad */
+    font-weight: bold; /* Texto en negrita para mayor impacto */
+    color: #D81515; /* Color rojo para resaltar el texto */
+    background-color: #f8f8f8; /* Fondo claro para un contraste suave */
+    padding: 15px 20px; /* Espaciado interno para que el texto respire */
+    border-radius: 8px; /* Bordes redondeados para un diseño más suave */
+    text-align: center; /* Centrar el texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para darle profundidad */
+    margin: 20px auto; /* Margen para separación en la parte superior e inferior */
+    max-width: 600px; /* Ancho máximo para mantener el texto contenido */
+}
+.img-semana {
+    width: 50%;
+    max-width: 170px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.img-semana:hover {
+    opacity: 0.8;
+}
+
+.link-semana {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #f4a261;
+    padding: 10px 15px;
+    border: 2px solid #f4a261;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.link-semana:hover {
+    background-color: #f4a261;
+    color: white;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9em;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+}
